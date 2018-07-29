@@ -1,0 +1,48 @@
+.hamburger-menu{
+     float: left;
+     padding: 20px;
+    height: 18px;
+    transition: 0.5s ease;
+    cursor: pointer;
+ }
+.menu-hided{
+transform: rotate(180deg);
+    transition: 0.5s ease;
+}
+.icon-search{
+    float: left;
+    padding: 20px;
+
+    height: 18px;
+}
+.notification-icon {
+    float: right;
+    padding: 20px 10px 0px ;
+    width: 20px;
+}
+.messeges-icon {
+    float: right;
+    padding: 20px 10px 0px ;
+    height: 17px;
+}
+.avatar-polygon{
+    float:right;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-left: 5px;
+}
+.avatar-icon{
+    float:right;
+    padding-left: 20px;
+    height: 35px;
+    padding-top: 10px;
+}
+.add-project-btn{
+    background-color: #5584ff;
+    border-radius: 25px;
+    float: right;
+    padding:5px 15px;
+    color:white;
+    border: none;
+    margin: 15px 15px 0px 0px;
+}

@@ -1,0 +1,62 @@
+.dashboard-task-line{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid rgba(11, 10, 16, .3) ;
+    padding: 5px;
+}
+.dashboard-task-line .avatar-div{
+    flex-basis:30px;
+    padding: 5px;
+}
+.dashboard-task-line .text-div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-task-line .task-text {
+    flex:1;
+
+font-weight: bold;
+font-size: 0.7em;
+}
+.dashboard-task-line .clock-icon{
+    height:10px;
+    padding-top: 3px;
+    margin-right: 3px;
+    vertical-align:middle
+}
+.dashboard-task-line .task-deadline-pass{
+    font-size: 0.6em;
+    color: #fa6a9a;
+}
+.dashboard-task-line .task-deadline-div{
+    line-height: 0.6rem;
+}
+.dashboard-task-line .task-deadline-text{
+    font-size: 0.6rem;
+    color:#8492af;
+}
+.dashboard-task-line .task-avatar{
+text-align: center;
+vertical-align: center;
+background-color: #5384ff;
+
+border-radius: 50%;
+color:white;
+display: inline-block;
+padding: 5px;
+width: 16px;
+height: 16px;
+
+}
+
+.dashboard-task-line .task-options-icon {
+flex-basis:20px;
+    padding:3px;
+}
+.dashboard-task-line .more-options-icon{
+height: 15px;
+}

@@ -1,0 +1,28 @@
+.dashboard-item{
+    flex: 1 1 200px;
+    min-width: 200px;
+    background-color: white;
+    margin: 10px;
+    border: 1px solid rgba(11, 10, 16, .3)
+}
+.dashboard-item-title{
+flex-grow:1;
+
+}
+.dashboard-item .header{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dashboard-item-notification{
+    text-align: center;
+    border-radius: 50%;
+    color:white;
+    padding: 5px;
+    margin-left: 5px;
+    height: 16px;
+    flex-basis: 16px;
+
+}

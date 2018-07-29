@@ -1,0 +1,69 @@
+.dashboard-activity-line{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*border-top: 1px solid rgba(11, 10, 16, .3) ;*/
+    padding: 5px;
+}
+
+.dashboard-activity-line:first-of-type{
+    border-top: 1px solid rgba(11, 10, 16, .3) ;
+
+}
+.dashboard-activity-line .vertical-line{
+    border-left: 1px solid rgba(11, 10, 16, .3) ;
+    height: 50px; /* Override in-line if you want specific height. */
+    width: 50%;
+    position: absolute;
+    /*float: right;*/
+    right:0;
+    bottom: -30px;
+    z-index: -1;
+}
+.dashboard-activity-line:last-of-type .vertical-line{
+    display: none;
+}
+.dashboard-activity-line .avatar-div{
+    position: relative;
+    flex-basis:30px;
+    padding: 5px;
+    z-index: 1;
+
+}
+.dashboard-activity-line .profile-img{
+    width: 30px;
+
+}
+.dashboard-activity-line .text-div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-activity-line .activity-text-div {
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+}
+.dashboard-activity-line .activity-user,.activity-project{
+    font-weight: bold;
+}
+.dashboard-activity-line .activity-title{
+    font-weight:normal;
+    color:#8492af;
+}
+.dashboard-activity-line .time-ago-div{
+    padding-top: 3px;
+    line-height: 0.6rem;
+}
+.dashboard-activity-line .time-ago-text{
+    font-size: 0.6rem;
+    color:#8492af;
+}
+.dashboard-activity-line .clock-icon{
+    height:0.6rem;
+    margin-right: 3px;
+    vertical-align:middle
+}

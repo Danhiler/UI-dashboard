@@ -1,0 +1,38 @@
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.side-bar{
+  background-color: #0e1a35;
+  width: 200px;
+  text-align: left;
+  transition: 1s ease;
+
+
+}
+.hide-sidebar{
+  display: none;
+}
+
+.app-content{
+  background-color: #f6f7fa;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.top-bar{
+  background-color: #ffffff;
+  line-height: 50px;
+}
+
+.main-content{
+  flex-grow: 1;
+  padding:20px;
+}
