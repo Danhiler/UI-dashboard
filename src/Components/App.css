@@ -27,10 +27,7 @@
   text-align: left;
 }
 
-.top-bar{
-  background-color: #ffffff;
-  line-height: 50px;
-}
+
 
 .main-content{
   flex-grow: 1;

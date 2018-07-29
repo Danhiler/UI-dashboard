@@ -1,48 +1,72 @@
-.hamburger-menu{
-     float: left;
-     padding: 20px;
+.top-bar{
+    background-color: #ffffff;
+    line-height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.top-bar .space{
+    flex:1;
+}
+
+.top-bar .hamburger-menu{
+    flex-basis: 18px;
+ }
+.top-bar .hamburger-menu img{
     height: 18px;
     transition: 0.5s ease;
     cursor: pointer;
- }
-.menu-hided{
+    margin:auto;
+    padding-left: 10px;
+}
+.top-bar .menu-hided img{
 transform: rotate(180deg);
     transition: 0.5s ease;
 }
-.icon-search{
-    float: left;
-    padding: 20px;
-
-    height: 18px;
+.top-bar .icon-search{
+    flex-basis: 18px;
+    text-align: center;
 }
-.notification-icon {
-    float: right;
+.top-bar .icon-search img{
+    margin:auto;
+padding: 0 0  0 20px ;
+height: 18px;
+}
+.top-bar .notification-icon{
+    flex-basis: 50px;
+}
+.top-bar .notification-icon img {
     padding: 20px 10px 0px ;
     width: 20px;
 }
-.messeges-icon {
-    float: right;
+.top-bar .messeges-icon {
+flex-basis: 50px;
+}
+.top-bar .messeges-icon img {
     padding: 20px 10px 0px ;
     height: 17px;
 }
-.avatar-polygon{
-    float:right;
-    padding-right: 20px;
-    padding-top: 25px;
-    padding-left: 5px;
+.top-bar .avatar-icon{
+flex-basis: 70px;
 }
-.avatar-icon{
-    float:right;
-    padding-left: 20px;
+.top-bar .avatar-icon .polygon{
+    padding-right: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+.top-bar .avatar-icon .photo{
     height: 35px;
     padding-top: 10px;
 }
-.add-project-btn{
+.top-bar .add-project-btn {
+flex-basis: 50px;
+}
+.top-bar .add-project-btn input{
     background-color: #5584ff;
     border-radius: 25px;
-    float: right;
     padding:5px 15px;
     color:white;
     border: none;
-    margin: 15px 15px 0px 0px;
+    margin: 15px 15px 5px 0px;
 }

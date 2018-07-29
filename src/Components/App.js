@@ -42,7 +42,8 @@ class App extends Component {
             users: [{id: 1, name: "Nina Jones", avatarImg: 'nina.png'},
                 {id: 2, name: "John Smith", avatarImg: 'john.png'},
                 {id: 3, name: "Alex Clooneu", avatarImg: 'alex.png'},
-                {id: 4, name: "Alexandra Spears", avatarImg: 'alexandra.png'}]
+                {id: 4, name: "Alexandra Spears", avatarImg: 'alexandra.png'}],
+            loggedUser:{name:"John"}
         }
     }
 
@@ -51,8 +52,8 @@ class App extends Component {
             <div className="App">
                 <div className="side-bar"><SideBar/></div>
                 <div className="app-content">
-                    <div className="top-bar"><TopBar/></div>
-                    <div className="main-content"><MainContent dashboardData={this.state.dashboardData} users={this.state.users}/></div>
+                    <TopBar/>
+                    <div className="main-content"><MainContent dashboardData={this.state.dashboardData} users={this.state.users} loggedUser={this.state.loggedUser}/></div>
 
                 </div>
             </div>

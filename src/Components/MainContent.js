@@ -6,7 +6,7 @@ class MainContent extends Component {
     render() {
         return (
             <div>
-                <h1>Hello John!</h1>
+                <h1>Hello {this.props.loggedUser.name}!</h1>
                 <div className="dashboard">
                     <div className="bottom-line">
                         {this.printDashboardItems()}

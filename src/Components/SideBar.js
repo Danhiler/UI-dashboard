@@ -1,13 +1,12 @@
 import './SideBar.css';
 import React, { Component } from 'react';
-import home from '../icons/menu-icons/icon-home.png';
 
 class SideBar extends Component {
     constructor(props){
         super(props)
         this.state= {
             menuItems:[
-                {name:"Home",iconUrl:home},
+                {name:"Home",iconUrl:'./icons/menu-icons/icon-home.png'},
                 {name:"Workflow",iconUrl:"./icons/menu-icons/icon-workflow.png"},
                 {name:"Statistic",iconUrl:"./icons/menu-icons/icon-statistic.png"},
                 {name:"Calendar",iconUrl:"./icons/menu-icons/icon-calendar.png"},
