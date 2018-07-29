@@ -10,7 +10,7 @@
     margin: 5px;
 }
 .top-bar .space {
-    flex: 20 20 0px;
+    flex: 20 20 1px;
 }
 
 .top-bar .hamburger-menu {
@@ -87,4 +87,9 @@
     border: none;
     margin-right: 10px;
 
+}
+@media only screen and (max-width: 600px) {
+    .top-bar div{
+        margin: 2px;
+    }
 }
