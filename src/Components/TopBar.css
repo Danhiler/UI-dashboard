@@ -1,4 +1,4 @@
-.top-bar{
+.top-bar {
     background-color: #ffffff;
     line-height: 50px;
     display: flex;
@@ -6,67 +6,85 @@
     flex-wrap: wrap;
     align-items: center;
 }
-.top-bar .space{
-    flex:1;
+.top-bar div{
+    margin: 5px;
+}
+.top-bar .space {
+    flex: 20 20 0px;
 }
 
-.top-bar .hamburger-menu{
-    flex-basis: 18px;
- }
-.top-bar .hamburger-menu img{
+.top-bar .hamburger-menu {
+    flex: 1 1 18px;
+}
+
+.top-bar .hamburger-menu img {
     height: 18px;
     transition: 0.5s ease;
     cursor: pointer;
-    margin:auto;
+    margin: auto;
     padding-left: 10px;
 }
-.top-bar .menu-hided img{
-transform: rotate(180deg);
+
+.menu-hided {
+    transform: rotate(180deg);
     transition: 0.5s ease;
 }
-.top-bar .icon-search{
-    flex-basis: 18px;
+
+.top-bar .icon-search {
+    flex: 1 1 18px;
     text-align: center;
 }
-.top-bar .icon-search img{
-    margin:auto;
-padding: 0 0  0 20px ;
-height: 18px;
+
+.top-bar .icon-search img {
+    margin: auto;
+    height: 18px;
 }
-.top-bar .notification-icon{
-    flex-basis: 50px;
+
+.top-bar .notification-icon {
+    flex: 1 1 18px;
+    text-align: center;
 }
+
 .top-bar .notification-icon img {
-    padding: 20px 10px 0px ;
-    width: 20px;
+    height: 18px;
 }
+
 .top-bar .messeges-icon {
-flex-basis: 50px;
+    flex: 1 1 18px;
+    text-align: center;
 }
+
 .top-bar .messeges-icon img {
-    padding: 20px 10px 0px ;
     height: 17px;
+
 }
-.top-bar .avatar-icon{
-flex-basis: 70px;
-}
-.top-bar .avatar-icon .polygon{
+
+.top-bar .avatar-icon {
+    flex: 1 1 18px;
+    white-space:nowrap;
+    }
+
+.top-bar .avatar-icon .polygon {
     padding-right: 10px;
     padding-left: 5px;
     padding-bottom: 10px;
 }
-.top-bar .avatar-icon .photo{
+
+.top-bar .avatar-icon .photo {
     height: 35px;
     padding-top: 10px;
 }
+
 .top-bar .add-project-btn {
-flex-basis: 50px;
+    flex: 1 1 18px;
 }
-.top-bar .add-project-btn input{
+
+.top-bar .add-project-btn input {
     background-color: #5584ff;
     border-radius: 25px;
-    padding:5px 15px;
-    color:white;
+    padding: 5px 15px;
+    color: white;
     border: none;
-    margin: 15px 15px 5px 0px;
+    margin-right: 10px;
+
 }

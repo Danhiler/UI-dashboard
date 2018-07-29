@@ -8,7 +8,7 @@ class TopBar extends Component {
                 <div className="hamburger-menu"><img src="./icons/icon-hamburger.png" alt="open/close menu"/></div>
                 <div className="icon-search"><img src="./icons/icon-search.png" alt="search"/></div>
 
-                <div className="space"></div>
+                <div className="space"> </div>
 
                 <div className="add-project-btn"><input type="button" value='+ Add project'/></div>
                 <div className="messeges-icon"><img src="./icons/icon-messege.png" alt="messages"/></div>
@@ -22,7 +22,8 @@ class TopBar extends Component {
     }
 
     componentDidMount() {
-        document.querySelector('.hamburger-menu').addEventListener("click", (e) => {
+        const hamburgerMenu=document.querySelector('.hamburger-menu img')
+        hamburgerMenu.addEventListener("click", (e) => {
             const sideBar = document.querySelector('.side-bar')
             if (sideBar.classList.contains("hide-sidebar")) {
                 sideBar.classList.remove("hide-sidebar")
@@ -32,6 +33,10 @@ class TopBar extends Component {
                 e.target.classList.add("menu-hided")
             }
         })
+        console.log(window.innerWidth)
+        if(window.innerWidth<600){
+            hamburgerMenu.click()
+        }
     }
 
 }
