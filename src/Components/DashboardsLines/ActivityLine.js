@@ -6,7 +6,7 @@ class ActivityLine extends React.Component {
     render() {
         const item = this.props.item;
         const user = this.props.users.find((user) => user.id === item.userID);
-        const userImgPath = "../../icons/users-icons/" + user.avatarImg;
+        const userImgPath = "./icons/users-icons/" + user.avatarImg;
 
         return (<div className="dashboard-activity-line">
             <div className="avatar-div"><div className="vertical-line"> </div><img src={userImgPath} alt="" className="profile-img"/>
@@ -26,7 +26,7 @@ class ActivityLine extends React.Component {
     getTimeAgo = (date) => {
         const str = getTimeAgo(date,false)
         return (<div className="time-ago-div">
-                    <img src="../../icons/clock-icon-black.png" alt="when happened?" className="clock-icon"/>
+                    <img src="./icons/clock-icon-black.png" alt="when happened?" className="clock-icon"/>
             <span className="time-ago-text">{ str}</span></div>)
     }
 }
